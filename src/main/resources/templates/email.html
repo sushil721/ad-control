@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+.lg-1 {
+	width: 8.33%;
+}
+
+.lg-2 {
+	width: 16.66%;
+}
+
+.lg-3 {
+	width: 25%;
+}
+
+.lg-4 {
+	width: 33.33%;
+}
+
+.lg-5 {
+	width: 41.66%;
+}
+
+.lg-6 {
+	width: 50%;
+}
+
+.lg-7 {
+	width: 58.33%;
+}
+
+.lg-8 {
+	width: 25%;
+}
+
+.lg-9 {
+	width: 75%;
+}
+
+.lg-10 {
+	width: 83.33%;
+}
+
+.lg-11 {
+	width: 91.66%;
+}
+
+.lg-12 {
+	width: 100%;
+}
+
+.summaryContainer {
+	border: 1px solid black;
+}
+
+.summaryContainer {
+	
+}
+
+.container-title {
+	font-weight: bold;
+	text-align: left
+}
+
+.amountDueContainer {
+	border: 1px solid black;
+	background-color: #9dcfe6
+}
+
+.amountDueContainer div {
+	text-align: center;
+}
+
+.caption {
+	text-align: left;
+	padding: 5px;
+}
+
+.underlined-caption caption {
+	border-bottom: 1px solid black;
+}
+
+.outer {
+	background: #ffffff;
+	border-radius: 15px;
+	width: 600px;
+}
+.sider {
+	background: #ffffff;
+	border-radius: 5px;
+	width: 50px;
+}
+
+table {
+	border-spacing: 2px;
+	padding: 5px
+}
+
+div {
+	margin-bottom: 10px;
+}
+</style>
+</head>
+<body style="background-color: #f6f6f6;">
+	<center>
+	<!--
+	<table class="sider">
+	<tr>Hello</tr>
+	<td>Sushil</td>
+	</table>
+	-->
+		<table class="outer">
+			<tr class="lg-12">
+				<td class="lg-12">
+					<table class="lg-12">
+						<tr>
+							<td class="lg-6 null">
+								<table width="100%">
+									<caption class="container-title"></caption>
+									<tr class="lg-12">
+										<td>
+											<div class="lg-2">
+												<img
+													src="https://s3.amazonaws.com/paymentus-logos-dev/PAYMENTUS-DEV/N503/logo/logo.jpeg?timestamp=1560114033212"
+													alt="null" width="80" />
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="lg-6 amountDueContainer">
+								<table width="100%">
+									<caption class="container-title"></caption>
+									<tr class="lg-12">
+										<td>
+											<div class="lg-12">
+												<span style="display: inline">Amount Due : $200</span>
+											</div>
+											<div class="lg-12">
+												<span style="display: inline">on %s or : 15/08/2019</span>
+											</div>
+											<div class="lg-12">
+												<span style="display: inline">Payment scheduled for :
+													20/08/2019</span>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="lg-6 summaryContainer">
+								<table width="100%">
+									<caption class="container-title">Account Summary</caption>
+									<tr class="lg-12">
+										<td>
+											<div class="lg-12">
+												<span style="display: inline">Account Number :
+													9234567812345678</span>
+											</div>
+											<div class="lg-12">
+												<span style="display: inline">Statement Date :
+													15/08/2019</span>
+											</div>
+											<div class="lg-12">
+												<span style="display: inline">Customer Name : Sushil
+													Kumar Singh</span>
+											</div>
+											<div class="lg-12">
+												<span style="display: inline">Previous Bill Amount :
+													$2200</span>
+											</div>
+											<div class="lg-12">
+												<span style="display: inline">Payments : $2500</span>
+											</div>
+											<div class="lg-12">
+												<span style="display: inline">Amount Due : $300</span>
+											</div>
+											<div class="lg-12">
+												<span style="display: inline">Due Date : 16/08/2019</span>
+											</div>
+											<div class="lg-12">
+												<span style="display: inline">Address : New Delhi,
+													India.</span>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="lg-6 optionsContainer">
+								<table width="100%">
+									<caption class="container-title">Payment Options</caption>
+									<tr class="lg-12">
+										<td>
+											<div class="lg-6 underlined-caption">
+												<span style="display: inline">Pay online:</span>
+											</div>
+											<div class="lg-8">
+												<a href="https://www.google.co.in" target="_self">Pay
+													Link</a>
+											</div>
+											<div class="lg-6 underlined-caption">
+												<span style="display: inline">Pay by Phone:</span>
+											</div>
+											<div class="lg-12 underlined-caption">
+												<span style="display: inline">phone number here</span>
+											</div>
+											<div class="lg-6 underlined-caption">
+												<span style="display: inline">Mail</span>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="lg-6 null">
+								<table width="100%">
+									<caption class="container-title">Important Messages</caption>
+									<tr class="lg-12">
+										<td>
+											<div class="lg-6 underlined-caption">
+												<span style="display: inline"><!-- messages here -->
+													<a th:href="@{/ad/ad-1}" th:target="_blank">
+												       <img src="/static/ad-1.gif" alt="null" width="80" />
+												    </a>
+												</span>
+											</div>
+										</td>
+									</tr>
+								</table>  
+							</td>
+							<td class="lg-6">
+								<table width="100%">
+									<caption class="container-title"></caption>
+									<tr class="lg-12">
+										<td>
+											<div class="lg-6" id="ad-1">
+												<!-- <a th:href="@{/add/ad-1}">
+												 	<img src="/static/favicon.ico" alt="Hello" width="80" />
+												</a> -->
+												<a href="/add/ad-1">
+												 	<img src="/static/favicon.ico" alt="Hello" width="80" />
+												</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="lg-6 null">
+								<table width="100%">
+									<caption class="container-title">Customer Service</caption>
+									<tr class="lg-12">
+										<td>
+											<div class="lg-12 underlined-caption">
+												<span style="display: inline">For emergencies and
+													reporting outages: [phone number here]</span>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+</html>

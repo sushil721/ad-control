@@ -1,0 +1,26 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+    <p>Hello</p>
+    <form action="/addCustomer" th:action="@{/addCustomer}" th:object="${customer}" method="POST">
+    
+	    <div>
+	    	<label>First Name</label>
+	    	<input type="text" th:field="*{firstName}" />
+	    </div>
+   		<div>
+	    	<label>Last Name</label>
+	    	<input type="text" th:field="*{lastName}" />
+	    </div>
+	    <div>
+   		<button type="submit">SUBMIT</button>
+   		</div>
+	</form>
+</body>
+</html>
